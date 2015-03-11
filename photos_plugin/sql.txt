@@ -1,0 +1,60 @@
+﻿CREATE TABLE `photos_cats` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` text NOT NULL,
+  `img` text NOT NULL,
+  `cat` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+)  CHARSET=utf8  AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE `photos_data` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` text NOT NULL,
+  `img` text NOT NULL,
+  `thumb` text NOT NULL,
+  `cat` int(11) NOT NULL default '0',
+  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+  PRIMARY KEY  (`id`)
+)   CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+
+
+insert into songs_phrases_cats(id,name) values('photos','ألبوم الصور');
+
+insert into songs_phrases (name,value,cat) values('err_no_photos','لا توجد صور تحت هذا القسم','photos');
+
+insert into songs_phrases (name,value,cat) values('photos_dir','دليل الصور','photos');
+
+insert into songs_phrases (name,value,cat) values('photos_add_limit','عدد اضافة الصور','photos');
+
+insert into songs_phrases (name,value,cat) values('photos_thumb_width','عرض مصغرة الصور','photos');
+
+insert into songs_phrases (name,value,cat) values('photos_thumb_hieght','طول مصغرة الصور','photos');
+
+insert into songs_phrases (name,value,cat) values('photos_perpage','عدد الصور في الصفحة','photos');
+
+insert into songs_phrases (name,value,cat) values('photos_cells','عدد اعمدة الصور','photos');
+
+insert into songs_phrases (name,value,cat) values('click_here_to_add_photos','اضغط هنا لإضافة الصور','photos');
+
+insert into songs_phrases (name,value,cat) values('photos_edit_comment','تعديل التعليق','photos');
+
+insert into songs_phrases (name,value,cat) values('photos_allowed_types','أنواع الصور المسموح بها','photos');
+
+insert into songs_phrases (name,value,cat) values('photos_the_comment','التعليق','photos');
+
+
+
+insert into songs_settings (name,value) values('photos_add_limit','20');
+
+insert into songs_settings (name,value) values('photos_thumb_width','100');
+
+insert into songs_settings (name,value) values('photos_thumb_hieght','100');
+
+insert into songs_settings (name,value) values('photos_perpage','30');
+
+insert into songs_settings (name,value) values('photos_cells','3');
+
+
+

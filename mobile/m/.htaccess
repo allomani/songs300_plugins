@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^browse-(.*).html index.php?action=browse&id=$1
+RewriteRule ^songs-(.*).html index.php?action=songs&id=$1
+RewriteRule ^news-(.*).html index.php?action=news&id=$1
